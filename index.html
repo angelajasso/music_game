@@ -1,9 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eco Musical</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🎵 Eco Musical 🎵</h1>
+    <div id="piano">
+      <button class="note" data-note="C">Do</button>
+      <button class="note" data-note="D">Re</button>
+      <button class="note" data-note="E">Mi</button>
+      <button class="note" data-note="F">Fa</button>
+      <button class="note" data-note="G">Sol</button>
+      <button class="note" data-note="A">La</button>
+      <button class="note" data-note="B">Si</button>
+    </div>
+    <div class="info">
+      <p>Nivel: <span id="level">1</span></p>
+      <p>Puntaje: <span id="score">0</span></p>
+    </div>
+    <button id="start-btn">Iniciar Juego</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
+
