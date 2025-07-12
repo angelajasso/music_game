@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e2a2b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#piano {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+
+.note {
+  width: 50px;
+  height: 150px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.note:active {
+  transform: scale(0.95);
+}
+
+.note[data-note="C"] {
+  background-color: #e63946;
+}
+.note[data-note="D"] {
+  background-color: #f77f00;
+}
+.note[data-note="E"] {
+  background-color: #fcbf49;
+}
+.note[data-note="F"] {
+  background-color: #80ed99;
+}
+.note[data-note="G"] {
+  background-color: #38a3a5;
+}
+.note[data-note="A"] {
+  background-color: #56cfe1;
+}
+.note[data-note="B"] {
+  background-color: #9d4edd;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+#start-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#start-btn:hover {
+  background-color: #21867a;
+}
