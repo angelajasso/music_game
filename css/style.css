@@ -26,11 +26,15 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  --l: 95%;
 }
 
 .game-container {
   text-align: center;
-  width: 600px;
+  border-radius: 20px;
+  padding: 8rem;
+  align-content: center;
+  height: 90vh;
 }
 
 h1 {
