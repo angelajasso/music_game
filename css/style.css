@@ -1,8 +1,27 @@
-body {
+/*Reset styles*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   margin: 0;
+  padding: 0;
+
+  --h: 0;
+  --s: 100%;
+  --l: 85%;
+  --bg-color: hsl(var(--h), var(--s), var(--l));
+
+  background-color: var(--bg-color);
+  color: hsl(180, var(--s), 15%);
+}
+
+body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0e2a2b;
-  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,6 +30,7 @@ body {
 
 .game-container {
   text-align: center;
+  width: 600px;
 }
 
 h1 {
@@ -31,7 +51,6 @@ h1 {
   border: none;
   border-radius: 10px;
   font-size: 1rem;
-  color: white;
   cursor: pointer;
   transition: transform 0.1s ease;
 }
@@ -41,25 +60,25 @@ h1 {
 }
 
 .note[data-note="C"] {
-  background-color: #e63946;
+  --h: 35;
 }
 .note[data-note="D"] {
-  background-color: #f77f00;
+  --h: 65;
 }
 .note[data-note="E"] {
-  background-color: #fcbf49;
+  --h: 110;
 }
 .note[data-note="F"] {
-  background-color: #80ed99;
+  --h: 185;
 }
 .note[data-note="G"] {
-  background-color: #38a3a5;
+  --h: 215;
 }
 .note[data-note="A"] {
-  background-color: #56cfe1;
+  --h: 250;
 }
 .note[data-note="B"] {
-  background-color: #9d4edd;
+  --h: 300;
 }
 
 .info {
@@ -73,7 +92,8 @@ h1 {
 #start-btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  background-color: #2a9d8f;
+  --h: 180;
+  --l: 15%;
   color: white;
   border: none;
   border-radius: 8px;
@@ -82,5 +102,5 @@ h1 {
 }
 
 #start-btn:hover {
-  background-color: #21867a;
+  --l: 25%;
 }
