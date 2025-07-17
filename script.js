@@ -13,13 +13,13 @@ let isPlayingSequence = false;
 
 // Mapea notas con sonidos
 const notes = {
-  C: new Audio("sounds/do.mp3"),
-  D: new Audio("sounds/re.mp3"),
-  E: new Audio("sounds/mi.mp3"),
-  F: new Audio("sounds/fa.mp3"),
-  G: new Audio("sounds/sol.mp3"),
-  A: new Audio("sounds/la.mp3"),
-  B: new Audio("sounds/si.mp3"),
+  C: new Audio("sounds/do.ogg"),
+  D: new Audio("sounds/re.ogg"),
+  E: new Audio("sounds/mi.ogg"),
+  F: new Audio("sounds/fa.ogg"),
+  G: new Audio("sounds/sol.ogg"),
+  A: new Audio("sounds/la.ogg"),
+  B: new Audio("sounds/si.ogg"),
 };
 
 // Función para reproducir una nota
